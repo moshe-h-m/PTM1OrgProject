@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<VBox alignment="CENTER" prefHeight="428.0" prefWidth="448.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="com.example.ptm1orgproject.HelloController"
+>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="welcomeText" text="wellcom to our organization" />
+   <ImageView fitHeight="293.0" fitWidth="381.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image>
+             <url>C:\\Users\\mhm23\\Desktop\\CS Y3 22\\S C 22\\PTM1\\PTM1OrgProject\\organization member.png</url>
+         </Image>
+      </image>
+   </ImageView>
+    <Label fx:id="welcomeText1" layoutX="152.0" layoutY="30.0" text="choiic your voluntering" />
+   <HBox opacity="0.87" prefHeight="22.0" prefWidth="302.0">
+      <children>
+         <Button onAction="#onHelloButtonClick" prefHeight="22.0" prefWidth="86.0" text="Hello!" />
+          <Button alignment="CENTER_RIGHT" contentDisplay="CENTER" onAction="#onHelloButtonClick" prefHeight="22.0" prefWidth="88.0" style="-fx-background-color: 0;" text="Hello!">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <effect>
+               <Shadow />
+            </effect>
+         </Button>
+         <Button onAction="#onHelloButtonClick" prefHeight="22.0" prefWidth="86.0" text="Hello!" textAlignment="CENTER" />
+      </children>
+   </HBox>
+   <DatePicker />
+</VBox>
